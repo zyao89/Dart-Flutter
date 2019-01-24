@@ -1,0 +1,19 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "dart2js -o ./dist/main.js ./src/main.dart",
+    "watch": "gulp",
+    "serve": "node ./server/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.16.4",
+    "gulp": "^3.9.1",
+    "gulp-watch": "^5.0.1"
+  }
+}
