@@ -113,7 +113,7 @@ flutter emulators --create [--name xyz]
 2. 在 `main.dart` 中使用
 ```dart
     final wordPair = new WordPair.random();
-    
+
     new Text(wordPair.asPascalCase),
 ```
 

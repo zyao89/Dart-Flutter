@@ -5,7 +5,7 @@ npm run server
 npm run watch
 ```
 
-> Dart 是谷歌在011 年推出的编程语言，是一种结构化 Web 编程语言，允许用户通过 Chromium 中所整合的虚拟机（Dart VM）直接运行 Dart 语言编写的程序，免去了单独编译的步骤。以后这些程序将从 Dart VM 更快的性能与较低的启动延迟中受益。Dart 从设计之初就为配合现代 web 整体运作而考虑，开发团队也同时在持续改进 Dart 向 JavaScript 转换的快速编译器。Dart VM 以及现代 JavaScript 引擎（V8 等）都是 Dart 语言的首选目标平台。
+> Dart 是谷歌在2011年推出的编程语言，是一种结构化 Web 编程语言，允许用户通过 Chromium 中所整合的虚拟机（Dart VM）直接运行 Dart 语言编写的程序，免去了单独编译的步骤。以后这些程序将从 Dart VM 更快的性能与较低的启动延迟中受益。Dart 从设计之初就为配合现代 web 整体运作而考虑，开发团队也同时在持续改进 Dart 向 JavaScript 转换的快速编译器。Dart VM 以及现代 JavaScript 引擎（V8 等）都是 Dart 语言的首选目标平台。
 
 > https://webdev.dartlang.org/api
 
@@ -214,7 +214,7 @@ dynamics() {
     Object o = 'string';
     o = 42;
     o.toString();   // 我们只能调用Object 支持的方法
-    
+
     // dynamic 是告诉编译器，我们知道自己在做什么，不用做类型检测。
     dynamic obj = 'string';
     obj['foo'] = 4;  // 可以编译通过，但在运行时会抛出 NoSuchMethodError
@@ -239,7 +239,7 @@ add2(int a, int b) {
 }
 
 // =>是return语句的简写
-add3(a, b) => a + b; 
+add3(a, b) => a + b;
 
 main() {
   print(add(1, 2)); // 3
@@ -449,12 +449,12 @@ main() {
   param2 ??= "world";
   print("param1 = $param1"); // param1 = hello
   print("param2 = $param2"); // param2 = world
-  
+
   // ?.运算符
   var str1 = "hello world";
   var str2 = null;
   print(str1?.length); // 11
-  print(str2?.length); // null 
+  print(str2?.length); // null
   print(str2.length); // 报错
 }
 ```
@@ -810,10 +810,10 @@ main() {
 如果你在API文档寻找基本数组类型或者 [List](https://api.dartlang.org/apidocs/channels/stable/dartdoc-viewer/dart:core.List) 类型，你将会看到该类型实际上为List`<E>`,其中<...>标记表示此表为一个泛型类型（或为参数化结构）—— 一种含有正规类型参数的类型。按照惯例，类型变量通常为单字符名称，例如E,T,S,K,以及V。
 
 ```dart
-var names = new List<String>();   
+var names = new List<String>();
 names.addAll(['Seth', 'Kathy', 'Lars']);
-//...   
-names.add(42); //在调试模式中失败 (在生产模式中成功).  
+//...
+names.add(42); //在调试模式中失败 (在生产模式中成功).
 ```
 
 
